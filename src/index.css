@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Ioskeley Mono';
+  src: url('/fonts/IoskeleyMono-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Ioskeley Mono', monospace;
+  color-scheme: dark;
+  background: #000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body,
+#root,
+.resume-viewer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #000;
+}
+
+.resume-viewer {
+  overflow: hidden;
+}
+
+.resume-viewer iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
