@@ -8,7 +8,8 @@
     "dev": "vite",
     "resume": "typst compile --font-path fonts main.typ main.pdf && cp main.pdf public/resume.pdf",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "bun run resume && bun run build && wrangler pages deploy dist --project-name resume --branch main --commit-dirty=true"
   },
   "dependencies": {
     "solid-js": "^1.9.17"

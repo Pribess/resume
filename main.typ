@@ -9,7 +9,7 @@
   fill: rgb("#111111"),
 )
 
-#set par(leading: 0.7em)
+#set par(leading: 0.8em)
 
 #let mono = "IoskeleyMono Nerd Font"
 
@@ -25,7 +25,7 @@
   ]
   #v(10pt)
   #body
-  #v(22pt)
+  #v(10pt)
 ]
 
 #grid(
@@ -66,14 +66,20 @@
     align: (left, right),
     column-gutter: 20pt,
     [
-      #text(size: 11pt, weight: 600)[Digital Layer Co., Ltd.] \
+      #text(size: 11pt, weight: 600)[Digital Layer Co., Ltd.]
+      #h(5pt)
+      #link("https://bgp.tools/as/20200")[
+        #text(size: 8.5pt, fill: rgb("#555555"))[AS20200]
+      ] \
       #text(size: 9pt, fill: rgb("#555555"))[Founding Engineer]
     ],
     [#text(size: 9pt)[Dec 2022 — Present]],
   )
   #v(7pt)
   #text(size: 8.5pt, fill: rgb("#555555"))[
-    Rust · C/C++ · DPDK · XDP · TS/JS · Next.js
+    Rust · C/C++ · Linux Kernel · KVM · DPDK · XDP · TS/JS · Next.js \
+    K8s · Postgres · BullMQ · Redis \
+    BGP · Route Policy
   ]
 ]
 
@@ -88,7 +94,12 @@
       #text(size: 8.5pt, fill: rgb("#555555"))[
         (Artificial Intelligence Student Society)
       ] \
-      #text(size: 9pt, fill: rgb("#555555"))[President]
+      #text(size: 9pt, fill: rgb("#555555"))[President] \
+      #link("https://www.instagram.com/ai.at.sogang/")[
+        #text(font: mono, size: 8.5pt, fill: rgb("#555555"))[
+          instagram.com/ai.at.sogang
+        ]
+      ]
     ],
     [#text(size: 9pt)[Jul 2026 — Present]],
   )
